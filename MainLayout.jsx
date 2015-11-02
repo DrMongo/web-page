@@ -2,7 +2,7 @@ MainLayout = React.createClass({
   render() {
     return (
       <div>
-        <div className="container text-center">
+        <div className="text-center">
           {this.props.content}
         </div>
         <footer>Dr. Mongo</footer>
