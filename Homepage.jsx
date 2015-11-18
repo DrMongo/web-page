@@ -10,6 +10,7 @@ $ meteor --port 3040`);
     const features = {
       tableTree: {title: '2-in-1: Table & tree'},
       favorite: {title: 'Favorite filters'},
+      colors: {title: 'Database color themes'},
     };
 
     return (
@@ -47,7 +48,7 @@ $ meteor --port 3040`);
             </div>
           </section>
 
-          <section className="p-y-lg">
+          <section className="p-y-lg m-y-md">
             <div className="container">
               <div className="row">
                 <div className="col-md-push-2 col-md-4 text-center vertical-center">
@@ -57,6 +58,21 @@ $ meteor --port 3040`);
                 </div>
                 <div className="hidden-xs hidden-sm col-md-push-2 col-md-4 vertical-center">
                   <img className="screen img-responsive" src="/screens/favorite.png" />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="p-y-lg">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-8 vertical-center">
+                  <div className="visible-xs-block visible-sm-block h1 text-center m-b-md">{features.colors.title}</div>
+                  <img className="screen img-responsive" src="/screens/colors.png" />
+                </div>
+                <div className="col-md-4 text-center vertical-center">
+                  <div className="hidden-xs hidden-sm h1">{features.colors.title}</div>
+                  <div className="h3 m-t-md">Pick a color for each database to prevent accidental changes on production database instead of the local one.</div>
                 </div>
               </div>
             </div>
