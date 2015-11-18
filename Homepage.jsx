@@ -7,6 +7,11 @@ $ cd DrMongo
 $ meteor --port 3040`);
     const codeClass = 'hljs' + installMeteorCommands.language;
 
+    const features = {
+      tableTree: {title: '2-in-1: Table & tree'},
+      favorite: {title: 'Favorite filters'},
+    };
+
     return (
       <div className="home">
         <div className="jumbo">
@@ -20,15 +25,51 @@ $ meteor --port 3040`);
 
         <div className="container text-center">
           <section>
-            <h1>Browse, insert, delete or edit your documents with ease.</h1>
-            <img className="screen img-responsive" src="screen-documents.png" />
+            <div className="h1">Browse, insert, delete or edit your documents with ease.</div>
+            <img className="screen img-responsive m-t-lg m-b-md" src="/screens/documents.png" />
+          </section>
+        </div>
+
+        <div id="killer-features" className="m-t-lg">
+
+          <section className="p-y-lg">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-8 vertical-center">
+                  <div className="visible-xs-block visible-sm-block h1 text-center m-b-md">{features.tableTree.title}</div>
+                  <img className="screen img-responsive" src="/screens/pinned.png" />
+                </div>
+                <div className="col-md-4 text-center vertical-center">
+                  <div className="hidden-xs hidden-sm h1">{features.tableTree.title}</div>
+                  <div className="h3 m-t-md">Table & tree view combined. Pin the most important attributes of your documents.</div>
+                </div>
+              </div>
+            </div>
           </section>
 
+          <section className="p-y-lg">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-push-2 col-md-4 text-center vertical-center">
+                  <div className="h1 m-b-md">{features.favorite.title}</div>
+                  <img className="visible-xs-block visible-sm-block screen img-responsive" src="/screens/pinned.png" />
+                  <div className="h3 m-t-md">Save & name your filters to return to them easily.</div>
+                </div>
+                <div className="hidden-xs hidden-sm col-md-push-2 col-md-4 vertical-center">
+                  <img className="screen img-responsive" src="/screens/favorite.png" />
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <div className="container text-center">
           <section>
             <h1 className="text-center">Installation</h1>
             <div className="row text-left">
               <div className="col-md-6 col-md-push-3">
-                
+
                 <h4 className="m-b-sm m-t-lg">Dr. Mongo runs as a Meteor application, so you need to have Meteor installed, first.</h4>
                 <pre><code className={codeClass} dangerouslySetInnerHTML={{__html: installMeteorCommands.value}} /></pre>
                 <div className="text-right">
@@ -38,7 +79,7 @@ $ meteor --port 3040`);
                 <h4 className="m-b-sm m-t-lg">Clone git repository and run the application</h4>
                 <pre><code className={codeClass} dangerouslySetInnerHTML={{__html: installDrMongoCommands.value}} /></pre>
                 <div className="text-right">
-                  <small><em>Your Dr. Mongo instance has to be running along with your other Meteor apps, so we use port 3040, but you are free to use any port.</em></small>
+                  <small><em>Your Dr. Mongo instance has to be running along with your other Meteor apps, so we use port&nbsp;3040, but you are free to use any port.</em></small>
                 </div>
 
                 <h4 className="m-b-sm m-t-lg">Once your app is running, go to <a href="http://127.0.0.1:3040">http://127.0.0.1:3040</a></h4>

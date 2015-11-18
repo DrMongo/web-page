@@ -10,10 +10,16 @@ html, body {
   font-size: 15px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
   .font-family;
-  font-weight: 400;
+  font-weight: 100;
   margin-bottom: .2em;
+  line-height: 1.2;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin: 0;
 }
 
 h1, .h1 {font-size: 2.1rem;}
@@ -42,9 +48,8 @@ section {
 }
 
 .screen {
-  margin-top: 3rem;
-  -webkit-box-shadow: 0 0 20px 3px #000000;
-  box-shadow: 0 0 20px 3px #000000;
+  -webkit-box-shadow: 0 0 10px 1px #000000;
+  box-shadow: 0 0 10px 1px #000000;
 }
 
 
@@ -97,4 +102,18 @@ footer {
 .btn-jumbo:hover, .btn-jumbo:focus, .btn-jumbo.active {
   background-color: #fefefe;
   color: #000;
+}
+
+
+.vertical-center {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+
+#killer-features {
+  section {
+
+  }
 }
