@@ -32,6 +32,9 @@ reactive-var
 underscore
 underscorestring:underscore.string
 
+# plugins
+simple:highlight.js
+
 # seo
 kadira:dochead
 
