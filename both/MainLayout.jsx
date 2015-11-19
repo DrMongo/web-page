@@ -1,8 +1,8 @@
 MainLayout = React.createClass({
 
   componentDidMount() {
-    DocHead.setTitle('Dr. Mongo');
     DocHead.addLink({rel: 'icon', href: '/favicon.ico?v=1.0'});
+    DocHead.addMeta({name: 'og:type', content: 'website'});
   },
 
   render() {
