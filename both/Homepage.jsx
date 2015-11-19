@@ -1,6 +1,5 @@
 Homepage = React.createClass({
   render() {
-
     const installMeteorCommands = hljs.highlight('bash', '$ curl https://install.meteor.com/ | sh');
     const installDrMongoCommands = hljs.highlight('bash', `$ git clone https://github.com/DrMongo/DrMongo.git
 $ cd DrMongo
@@ -21,8 +20,8 @@ $ meteor --port 3040`);
           <h2><i className="fa fa-heartbeat" /> Dr. Mongo</h2>
           <h3>Open-source MongoDB admin app build on MeteorJs.</h3>
           <div className="buttons">
-            <a className="btn btn-jumbo" href="https://github.com/DrMongo/DrMongo/archive/master.zip"><i className="fa fa-arrow-circle-o-down" /> Download</a>
-            <a className="btn btn-jumbo" href="https://github.com/DrMongo/DrMongo"><i className="fa fa-github" /> Source</a>
+            <a className="btn btn-jumbo" onClick={this.handleExitClick} data-name="download" href="https://github.com/DrMongo/DrMongo/archive/master.zip"><i className="fa fa-arrow-circle-o-down" /> Download</a>
+            <a className="btn btn-jumbo" onClick={this.handleExitClick} data-name="source-code" href="https://github.com/DrMongo/DrMongo"><i className="fa fa-github" /> Source</a>
           </div>
         </div>
 
@@ -137,5 +136,11 @@ $ meteor --port 3040`);
         </div>
       </div>
     );
+  },
+
+  handleExitClick(e) {
+    analytics.track("Exit Click", {
+      eventName: e.currentTarget.dataset.name
+    });
   }
 });

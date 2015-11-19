@@ -31,6 +31,7 @@ dburles:collection-helpers
 reactive-var
 underscore
 underscorestring:underscore.string
+okgrow:analytics
 
 # plugins
 simple:highlight.js
