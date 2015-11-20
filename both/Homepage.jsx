@@ -28,7 +28,7 @@ $ meteor --port 3040`);
       <div className="home">
         <div className="jumbo">
           <h2><i className="fa fa-heartbeat" /> Dr. Mongo</h2>
-          <h3>Open-source MongoDB admin app build on MeteorJs.</h3>
+          <h3>Open-source MongoDB admin app built on MeteorJs.</h3>
           <div className="buttons">
             <a className="btn btn-jumbo" onClick={this.handleExitClick} data-name="download" href="https://github.com/DrMongo/DrMongo/archive/master.zip"><i className="fa fa-arrow-circle-o-down" /> Download</a>
             <a className="btn btn-jumbo" onClick={this.handleExitClick} data-name="source-code" href="https://github.com/DrMongo/DrMongo"><i className="fa fa-github" /> Source</a>
@@ -53,7 +53,7 @@ $ meteor --port 3040`);
                 </div>
                 <div className="col-md-4 text-center vertical-center">
                   <div className="hidden-xs hidden-sm h1">{features.tableTree.title}</div>
-                  <div className="h3 m-t-md">Table & tree view combined. Pin the most important attributes of your documents.</div>
+                  <div className="h3 m-t-md">Table & tree view combined.<br />Pin the most important attributes <br />of your documents.</div>
                 </div>
               </div>
             </div>
@@ -65,7 +65,7 @@ $ meteor --port 3040`);
                 <div className="col-md-push-2 col-md-4 text-center vertical-center">
                   <div className="h1 m-b-md">{features.favorite.title}</div>
                   <img className="visible-xs-block visible-sm-block screen img-responsive" src="/screens/pinned.png" />
-                  <div className="h3 m-t-md">Save & name your filters to return to them easily.</div>
+                  <div className="h3 m-t-md">Save & name your filters <br />to return to them easily.</div>
                 </div>
                 <div className="hidden-xs hidden-sm col-md-push-2 col-md-4 vertical-center">
                   <img className="screen img-responsive" src="/screens/favorite.png" />
@@ -95,7 +95,7 @@ $ meteor --port 3040`);
                 <div className="col-md-push-1 col-md-5 text-center vertical-center">
                   <div className="h1 m-b-md">{features.searchId.title}</div>
                   <img className="visible-xs-block visible-sm-block screen img-responsive" src="/screens/searchId.png" />
-                  <div className="h3 m-t-md">Just paste any document _id and Dr.&nbsp;Mongo will dig it up for you.</div>
+                  <div className="h3 m-t-md">Just paste any document _id <br />and Dr.&nbsp;Mongo will dig it up for you.</div>
                 </div>
                 <div className="hidden-xs hidden-sm col-md-push-1 col-md-4 vertical-center">
                   <img className="screen img-responsive" src="/screens/searchId.png" />
