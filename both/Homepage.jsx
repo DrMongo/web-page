@@ -1,15 +1,17 @@
 Homepage = React.createClass({
 
-  componentDidMount() {
+
+  render() {
+
     var title = 'Dr. Mongo';
     DocHead.setTitle(title);
     DocHead.addMeta({name: 'og:title', content: title});
     DocHead.addMeta({name: 'og:description', content: 'Open-source MongoDB admin app build on MeteorJs.'});
     DocHead.addMeta({name: 'og:image', content: 'http://drmongo.com/og-image.png'});
     DocHead.addMeta({name: 'og:url', content: 'http://drmongo.com/'});
-  },
 
-  render() {
+
+
     const installMeteorCommands = hljs.highlight('bash', '$ curl https://install.meteor.com/ | sh');
     const installDrMongoCommands = hljs.highlight('bash', `$ git clone https://github.com/DrMongo/DrMongo.git
 $ cd DrMongo
