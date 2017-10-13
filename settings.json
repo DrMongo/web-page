@@ -1,1 +1,8 @@
-{  "public": {   "analyticsSettings": {      "Google Analytics" : {"trackingId": "UA-70358240-1"},      "Segment.io"       : {"apiKey": "EuvtmQ0a89XuXVsCl7eqyT4lQxPyDKtJ"}    }  }}
+{  
+  "public": {   
+    "analyticsSettings": {      
+      "Google Analytics" : {"trackingId": "UA-70358240-1"},      
+      "Segment.io"       : {"apiKey": "EuvtmQ0a89XuXVsCl7eqyT4lQxPyDKtJ"}    
+    }  
+  }
+}

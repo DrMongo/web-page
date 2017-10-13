@@ -1,6 +1,6 @@
+import React from 'react';
+
 MainLayout = React.createClass({
-
-
   render() {
 
     DocHead.addLink({rel: 'icon', href: '/favicon.ico?v=1.0'});
