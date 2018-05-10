@@ -21,10 +21,6 @@ $ meteor --port 3040`);
     const codeClass = 'hljs' + installMeteorCommands.language;
 
     const features = {
-      tableTree: {title: '2-in-1: Table & tree'},
-      favorite: {title: 'Favorite filters'},
-      colors: {title: '9 color themes for databases'},
-      foreign: {title: 'Foreign _id relations'},
       searchId: {title: 'Search _id, everywhere'}
     };
 
@@ -32,7 +28,7 @@ $ meteor --port 3040`);
       <div className="home">
         <div className="jumbo">
           <h2><i className="fa fa-heartbeat" /> Dr. Mongo</h2>
-          <h3>Open-source MongoDB admin app built on MeteorJs.</h3>
+          <h3>Open-source MongoDB admin app built on MeteorJs <br /> with unique killer-features you will love.</h3>
           <div className="buttons m-b-md">
             <a className="btn btn-jumbo" onClick={this.handleExitClick} data-name="download" href="https://github.com/DrMongo/DrMongo/archive/master.zip"><i className="fa fa-arrow-circle-o-down" /> Download</a>
             <a className="btn btn-jumbo" onClick={this.handleExitClick} data-name="source-code" href="https://github.com/DrMongo/DrMongo"><i className="fa fa-github" /> Source</a>
@@ -43,7 +39,7 @@ $ meteor --port 3040`);
         <div className="container text-center">
           <section>
             <div className="h1">Browse, insert, delete or edit your documents with ease.</div>
-            <img className="screen img-responsive m-t-lg m-b-md" src="/screens/documents.png" />
+            <img className="screen img-responsive m-t-lg m-b-md" src="/screens/main.png" />
           </section>
         </div>
 
@@ -53,57 +49,12 @@ $ meteor --port 3040`);
             <div className="container">
               <div className="row">
                 <div className="col-md-8 vertical-center">
-                  <div className="visible-xs-block visible-sm-block h1 text-center m-b-md">{features.tableTree.title}</div>
-                  <img className="screen img-responsive" src="/screens/pinned.png" />
+                  <div className="visible-xs-block visible-sm-block h1 text-center m-b-md">2-in-1: Table & tree</div>
+                  <img className="screen img-responsive" src="/screens/tree-table.png" />
                 </div>
                 <div className="col-md-4 text-center vertical-center">
-                  <div className="hidden-xs hidden-sm h1">{features.tableTree.title}</div>
+                  <div className="hidden-xs hidden-sm h1">2-in-1: Table & tree</div>
                   <div className="h3 m-t-md">Table & tree view combined.<br />Pin the most important attributes <br />of your documents.</div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section className="p-y-lg m-y-md">
-            <div className="container">
-              <div className="row">
-                <div className="col-md-push-2 col-md-4 text-center vertical-center">
-                  <div className="h1 m-b-md">{features.favorite.title}</div>
-                  <img className="visible-xs-block visible-sm-block screen img-responsive" src="/screens/pinned.png" />
-                  <div className="h3 m-t-md">Save & name your filters <br />to return to them easily.</div>
-                </div>
-                <div className="hidden-xs hidden-sm col-md-push-2 col-md-4 vertical-center">
-                  <img className="screen img-responsive" src="/screens/favorite.png" />
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section className="p-y-lg">
-            <div className="container">
-              <div className="row">
-                <div className="col-md-8 vertical-center">
-                  <div className="visible-xs-block visible-sm-block h1 text-center m-b-md">{features.colors.title}</div>
-                  <img className="screen img-responsive" src="/screens/colors.png" />
-                </div>
-                <div className="col-md-4 text-center vertical-center">
-                  <div className="hidden-xs hidden-sm h1">{features.colors.title}</div>
-                  <div className="h3 m-t-md">Pick a color for each database to prevent accidental changes on production database instead of the local one.</div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section className="p-y-lg m-y-md">
-            <div className="container">
-              <div className="row">
-                <div className="col-md-push-1 col-md-5 text-center vertical-center">
-                  <div className="h1 m-b-md">{features.searchId.title}</div>
-                  <img className="visible-xs-block visible-sm-block screen img-responsive" src="/screens/searchId.png" />
-                  <div className="h3 m-t-md">Just paste any document _id <br />and Dr.&nbsp;Mongo will dig it up for you.</div>
-                </div>
-                <div className="hidden-xs hidden-sm col-md-push-1 col-md-4 vertical-center">
-                  <img className="screen img-responsive" src="/screens/searchId.png" />
                 </div>
               </div>
             </div>
@@ -113,16 +64,122 @@ $ meteor --port 3040`);
             <div className="container">
               <div className="row">
                 <div className="col-md-push-2 col-md-4 vertical-center">
-                  <div className="visible-xs-block visible-sm-block h1 text-center m-b-md">{features.foreign.title}</div>
-                  <img className="screen img-responsive" src="/screens/fk.png" />
+                  <div className="visible-xs-block visible-sm-block h1 text-center m-b-md">Favorite filters</div>
+                  <img className="screen img-responsive" src="/screens/favorites.png" />
                 </div>
                 <div className="col-md-push-2 col-md-4 text-center vertical-center">
-                  <div className="hidden-xs hidden-sm h1">{features.foreign.title}</div>
+                  <div className="hidden-xs hidden-sm h1">Favorite filters</div>
+                  <div className="h3 m-t-md">Save & name your filters <br />to return to them easily.</div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="p-y-lg m-y-md">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-push-1 col-md-5 text-center vertical-center">
+                  <div className="h1 m-b-md">Search _id, everywhere</div>
+                  <img className="visible-xs-block visible-sm-block screen img-responsive" src="/screens/search-by-id.png" />
+                  <div className="h3 m-t-md">Just paste any document _id <br />and Dr.&nbsp;Mongo will dig it up for you.</div>
+                </div>
+                <div className="hidden-xs hidden-sm col-md-push-1 col-md-4 vertical-center">
+                  <img className="screen img-responsive" src="/screens/search-by-id.png" />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="p-y-lg">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-push-2 col-md-4 vertical-center">
+                  <div className="visible-xs-block visible-sm-block h1 text-center m-b-md">Blitz search by _id</div>
+                  <img className="screen img-responsive" src="/screens/blitz-id.png" />
+                </div>
+                <div className="col-md-push-2 col-md-4 text-center vertical-center">
+                  <div className="hidden-xs hidden-sm h1">Blitz search by _id</div>
+                  <div className="h3 m-t-md">Use "id-looking" searches without braces.</div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="p-y-lg m-y-md">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-push-1 col-md-5 text-center vertical-center">
+                  <div className="h1 m-b-md">Blitz search by any attribute</div>
+                  <img className="visible-xs-block visible-sm-block screen img-responsive" src="/screens/blitz-slug.png" />
+                  <div className="h3 m-t-md">Set other attributes that <br />Dr.&nbsp;Mongo will use to quick-search you documents. </div>
+                </div>
+                <div className="hidden-xs hidden-sm col-md-push-1 col-md-4 vertical-center">
+                  <img className="screen img-responsive" src="/screens/blitz-slug.png" />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="p-y-lg">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-push-2 col-md-4 vertical-center">
+                  <div className="visible-xs-block visible-sm-block h1 text-center m-b-md">Foreign _id relations</div>
+                  <img className="screen img-responsive" src="/screens/foreign-id.png" />
+                </div>
+                <div className="col-md-push-2 col-md-4 text-center vertical-center">
+                  <div className="hidden-xs hidden-sm h1">Foreign _id relations</div>
                   <div className="h3 m-t-md">Click to any "id-looking" value to find the related document.</div>
                 </div>
               </div>
             </div>
           </section>
+          <section className="p-y-lg m-y-md">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-push-1 col-md-5 text-center vertical-center">
+                  <div className="h1 m-b-md">Dates, oh dates...</div>
+                  <img className="visible-xs-block visible-sm-block screen img-responsive" src="/screens/dates.png" />
+                  <div className="h3 m-t-md">Built-in human-readable dates translator <br />for faster querying.</div>
+                </div>
+                <div className="hidden-xs hidden-sm col-md-push-1 col-md-4 vertical-center">
+                  <img className="screen img-responsive" src="/screens/dates.png" />
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+          <section className="p-y-lg">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-push-2 col-md-4 vertical-center">
+                  <div className="visible-xs-block visible-sm-block h1 text-center m-b-md">Multiple update & delete</div>
+                  <img className="screen img-responsive" src="/screens/multi-update.png" />
+                </div>
+                <div className="col-md-push-2 col-md-4 text-center vertical-center">
+                  <div className="hidden-xs hidden-sm h1">Multiple update & delete</div>
+                  <div className="h3 m-t-md">Update or delete multiple documents.</div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="p-y-lg">
+            <div className="container">
+              <div className="row">
+                <div className="col-md-8 vertical-center">
+                  <div className="visible-xs-block visible-sm-block h1 text-center m-b-md">9 color themes for databases</div>
+                  <img className="screen img-responsive" src="/screens/colors.png" />
+                </div>
+                <div className="col-md-4 text-center vertical-center">
+                  <div className="hidden-xs hidden-sm h1">9 color themes for databases</div>
+                  <div className="h3 m-t-md">Pick a color for each database to prevent accidental changes on production database instead of the local one.</div>
+                </div>
+              </div>
+            </div>
+          </section>
+
 
         </div>
 
