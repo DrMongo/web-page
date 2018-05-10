@@ -33,10 +33,11 @@ $ meteor --port 3040`);
         <div className="jumbo">
           <h2><i className="fa fa-heartbeat" /> Dr. Mongo</h2>
           <h3>Open-source MongoDB admin app built on MeteorJs.</h3>
-          <div className="buttons">
+          <div className="buttons m-b-md">
             <a className="btn btn-jumbo" onClick={this.handleExitClick} data-name="download" href="https://github.com/DrMongo/DrMongo/archive/master.zip"><i className="fa fa-arrow-circle-o-down" /> Download</a>
             <a className="btn btn-jumbo" onClick={this.handleExitClick} data-name="source-code" href="https://github.com/DrMongo/DrMongo"><i className="fa fa-github" /> Source</a>
           </div>
+          <span className="alert alert-warning">Dr. Mongo is deprecated. Please visit our new desktop app <a href="http://www.drmingo.com/">Dr. Mingo</a>.</span>
         </div>
 
         <div className="container text-center">
